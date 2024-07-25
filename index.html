@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ffffff; /* White background */
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      .success-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px; /* Add padding for mobile devices */
+      }
+
+      .success-icon {
+        background-color: #4caf50; /* Green color */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        margin-bottom: 60px; /* Add more margin for space between icon and text */
+      }
+
+      .success-icon:before,
+      .success-icon:after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid rgba(76, 175, 80, 0.4); /* Slightly darker green */
+      }
+
+      .success-icon:before {
+        width: 160px;
+        height: 160px;
+      }
+
+      .success-icon:after {
+        width: 200px;
+        height: 200px;
+      }
+
+      .checkmark {
+        color: #ffffff; /* White color for the checkmark */
+        font-size: 3em;
+      }
+
+      .message {
+        font-size: 1.5em;
+        color: #333333; /* Dark text color */
+        max-width: 80%; /* Limit width on smaller screens */
+        line-height: 1.4;
+        margin-top: 20px; /* Added margin for spacing */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+        .success-icon {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 50px; /* Maintain margin for smaller screens */
+        }
+
+        .success-icon:before {
+          width: 140px;
+          height: 140px;
+        }
+
+        .success-icon:after {
+          width: 180px;
+          height: 180px;
+        }
+
+        .checkmark {
+          font-size: 2.5em; /* Reduce checkmark size */
+        }
+
+        .message {
+          font-size: 1.2em; /* Reduce text size */
+          margin-top: 30px; /* Ensure spacing between icon and text */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="success-container">
+      <div class="success-icon">
+        <span class="checkmark">✓</span>
+      </div>
+      <div class="message">Successful, close page.</div>
+    </div>
+  </body>
+</html>
